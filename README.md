@@ -1,5 +1,6 @@
 # Event-Mapper
 Built with the MERN stack (MongoDB, Express, React and NodeJS).
+![site-image](http://res.cloudinary.com/prashantpks/image/upload/v1643569999/eventMapperImages/ln1rhdyvmubjevzwwnrq.png)
 
 ## Introduction
 
