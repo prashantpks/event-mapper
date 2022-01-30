@@ -1,0 +1,206 @@
+/* Navbar Componenet */
+.navbar-customclass {
+  background-color: #040430;
+}
+
+.navbar-customclass .container .navbar-brand{
+  color:#90f77e;
+  font-weight:900;
+}
+
+.navbar-customclass .container .collapse li a{
+  color:white;
+}
+
+.navbar-customclass .navbar-toggler-icon {
+  background-image: url("./assets/menu.svg");
+  color:white;
+}
+
+/*Date Range Component*/
+
+.date-picker{
+  width: 300px;
+  margin-right:0.4em;
+}
+
+.react-datepicker__tab-loop .react-datepicker-popper{
+  z-index: 100;
+}
+
+.date-picker input{
+  border: none;
+  border: 2px solid;
+  border-radius: 4px;
+  height:35px;
+  max-width: 150px;
+  padding: 20px;
+  outline: 0;  
+  letter-spacing: 2px;        
+	font-size: 14px;
+  color: gray;
+  margin-top:10px;
+  margin-bottom: 10px;
+	word-spacing: 20px; 
+  transition: border-color 0.5s ease-out;
+}
+
+/*Login signup form component*/
+
+.form-box{
+  border:1px solid #83e072;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow:hidden;
+  color:white;
+}
+
+.log-img{
+  background-image: linear-gradient(rgba(18, 35, 54, 0.5), rgba(18, 35, 54, 0.6)),url('./assets/login_banner.png');
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+.form-control:focus {
+  border-color: #83e072;
+  box-shadow: 0px 1px 1px rgba(34, 226, 17, 0.87) inset, 0px 0px 8px rgba(43, 209, 57, 0.5);
+}
+
+.btn-opt{
+  margin-left: 10px;
+}
+
+.btn-opt a{
+  color: #83e072;
+}
+
+/*My Events component*/
+
+.event-box{
+  margin-top: 10px;
+}
+
+.event-box h2{
+  padding-bottom: 5px;
+  border-bottom: 1px solid #83e072;
+  margin-bottom: 15px;
+}
+
+.event-box h2 a{
+  text-decoration: none;
+  color: white;
+}
+
+.event-box .head-active{
+  color: #83e072;
+}
+
+.event-list-box{
+  width: 100%;
+  height: 80vh;
+  overflow:auto;
+  text-align:justify;
+}
+
+.event-list-box .event-card .card{
+  background-color:#040430;
+  margin-bottom: 10px;
+  border:1px solid #83e072;
+}
+
+/*Modals*/
+
+.modal .custom-modal-box .modal-content{
+  background-color:#040430 ;
+
+}
+
+.modal .custom-modal-box .modal-content .modal-header{
+  border-bottom: 1px solid #83e072;
+}
+
+.modal .custom-modal-box .modal-content .modal-header .btn-close{
+  background: url('./assets/close.svg') center/1em auto no-repeat;
+  color:white;
+  opacity:1;
+}
+
+.modal .custom-modal-box .modal-content .modal-footer{
+  border-top: 1px solid #83e072;
+}
+
+/*Add Event Form component*/
+
+.popup-form {
+  background-color: #040430;
+  padding: 0;
+  cursor:default;
+  font-size:smaller;
+  z-index: 100;
+}
+.popup-form .container{
+  padding:0;
+}
+
+.popup-form .container .popup-form-box{
+  margin-top: 0;
+}
+
+.popup-form span{
+  color:#83e072
+}
+
+/*Mapbox Popup Component*/
+
+.mapboxgl-popup{
+  z-index:100;
+}
+
+.mapboxgl-popup .mapboxgl-popup-content{
+  padding: 3px;
+  
+}
+
+.mapboxgl-popup .mapboxgl-popup-content .mapboxgl-popup-close-button{
+  color:#83e072;
+  font-size: x-large;
+}
+
+/*Map Body Component*/
+
+.map-body{
+  overflow:hidden
+}
+
+
+.date-picker-popup input{
+  width:100%;
+} 
+
+.date-picker-popup input:focus {
+  box-shadow: 0px 1px 1px rgba(34, 226, 17, 0.87) inset, 0px 0px 8px rgba(43, 209, 57, 0.5);
+}
+
+/*Bootstrap card*/
+
+.card .card-img-top{
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+/*Body*/
+
+div {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: none; 
+  /* overflow:hidden; */
+}
+
+div::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
