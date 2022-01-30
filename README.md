@@ -69,7 +69,7 @@ $ npm start (to start the server)
 ```
 Inside **server folder** in your root directory, add **.env** file and write the below code.
 
-```bash
+```
 PORT=4000
 DATABASE_URL=
 CORS_ORIGIN=http://localhost:3000
@@ -77,7 +77,7 @@ JWT_SECRET_KEY=
 ```
 ## Comments
 
-This project is created as a practice to showcase my skills. However this my first MERN project, I intend to add more features further. Please give it a star and suggest improvements.
+This project is created as a practice to showcase my skills. However this is my first MERN project, I intend to add more features further. Please give it a star and suggest improvements.
 
 ## Author
 * LinkedIn: [@Prashant Kumar](https://www.linkedin.com/in/prashant-kumar-7aa9a4203/)
