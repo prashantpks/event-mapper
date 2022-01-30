@@ -1,4 +1,5 @@
 # Event-Mapper
+Built with the MERN stack (MongoDB, Express, React and NodeJS).
 
 ## Introduction
 
