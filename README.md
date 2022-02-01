@@ -74,6 +74,7 @@ PORT=4000
 DATABASE_URL=
 CORS_ORIGIN=http://localhost:3000
 JWT_SECRET_KEY=
+NODE_ENV=development
 ```
 ## Comments
 
