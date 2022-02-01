@@ -19,6 +19,7 @@ app.use(cors({
 app.use('/api/auth',require('./routes/auth'));
 app.use('/api/event',require('./routes/event'));
 
+
 //Handling page not found
 app.use(notFound);
 app.use(errorHandler);
