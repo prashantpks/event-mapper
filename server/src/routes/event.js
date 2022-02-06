@@ -56,8 +56,11 @@ router.put('/updateevent/:id',fetchuser,async (req,res)=>{
     let success = false;
     
     try{
-        const {event_name, description, event_banner, address, latitude, longitude, start_time, end_time} = req.body;
+        const {event_name, description, event_banner, address, latitude, longitude} = req.body;
         let event = await Event.findById(req.params.id);
+
+        const start_time = new Date(req.body.start_time);
+        const end_time = new Date(req.body.end_time);
 
         if(!event){
             return res.status(400).json({success,error:"Event doesn't exist"});
@@ -211,6 +214,7 @@ router.get('/myevents', fetchuser, async (req,res)=>{
     try{
         let userid = req.user.id;
         const user = await User.findById(userid);
+       
         let events = [];
         for(let i=0;i<user.my_events.length;i++){
             const event = await Event.findById(user.my_events[i]);

@@ -1,11 +1,10 @@
-import moment from 'moment';
 
 const API_URL = process.env.REACT_APP_API_URL;
 const authToken = localStorage.getItem('token');
 
 export async function addEvent(eventData,bannerUrl,startDate,endDate){
-    const start_time = moment(startDate).format('YYYY-MM-DD hh:mm');
-    const end_time = moment(endDate).format('YYYY-MM-DD hh:mm');
+    const start_time = startDate;
+    const end_time = endDate;
     console.log(authToken);
     const response = await fetch(`${API_URL}/api/event/addevent`,{
         method:'POST',
@@ -22,8 +21,8 @@ export async function addEvent(eventData,bannerUrl,startDate,endDate){
 }
 
 export async function updateEvent(id,eventData,startDate,endDate){
-    const start_time = moment(startDate).format('YYYY-MM-DD hh:mm');
-    const end_time = moment(endDate).format('YYYY-MM-DD hh:mm');
+    const start_time = startDate;
+    const end_time = endDate;
     console.log(authToken);
     const response = await fetch(`${API_URL}/api/event/updateevent/${id}`,{
         method:'PUT',
@@ -40,12 +39,10 @@ export async function updateEvent(id,eventData,startDate,endDate){
 
 
 export async function getEventList(startDate, endDate){
-    // const start_time = moment(startDate).format('YYYY-MM-DD hh:mm:ss');
-    // const end_time = moment(endDate).format('YYYY-MM-DD hh:mm:ss');
+    
     const start_time = startDate;
     const end_time = endDate;
-    // console.log(start_time);
-    // console.log(end_time);
+    
     const response = await fetch(`${API_URL}/api/event/fetcheventlist`,{
         method:'POST',
         headers: {
@@ -91,7 +88,9 @@ export async function fetchMyEvents(){
         }
     });
 
+    
     const json = await response.json();
+    console.log(json);
     return json;  
 }
 

@@ -2,11 +2,10 @@ import React from 'react'
 import moment from 'moment';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faClock, faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';
-import UpdateEventForm from './UpdateEventForm';
-import DeleteEventModal from './DeleteEventModal';
+
 
 function EventItem(props) {
-  const { event, handleUpdate, handleDelete } = props;
+  const { event, updateItem,deleteItem } = props;
 
   return (
     <div className="card mb-3">
@@ -31,11 +30,9 @@ function EventItem(props) {
                 <p style={{ fontWeight: 'lighter' }}>{moment(event.end_time).local().format('DD MMM YYYY')}<br />{moment(event.end_time).local().format('hh:mm a')}</p>
               </div>
             </div>
-            <button className="btn btn-outline-success" data-bs-target="#editModal" data-bs-toggle="modal"><FontAwesomeIcon icon={faEdit}></FontAwesomeIcon></button>
-            <button className="btn btn-outline-danger mx-3" data-bs-target="#deleteModal" data-bs-toggle="modal"><FontAwesomeIcon icon={faTrash}></FontAwesomeIcon></button>
+            <button className="btn btn-outline-success" onClick={()=>{updateItem(event)}}><FontAwesomeIcon icon={faEdit}></FontAwesomeIcon></button>
+            <button className="btn btn-outline-danger mx-3" onClick={()=>{deleteItem(event)}} ><FontAwesomeIcon icon={faTrash}></FontAwesomeIcon></button>
           </div>
-          <UpdateEventForm event={event} handleUpdate={handleUpdate}></UpdateEventForm>
-          <DeleteEventModal event={event} handleDelete={handleDelete}></DeleteEventModal>
         </div>
       </div>
     </div>
