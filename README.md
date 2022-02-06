@@ -76,6 +76,10 @@ CORS_ORIGIN=http://localhost:3000
 JWT_SECRET_KEY=
 NODE_ENV=development
 ```
+## Demo Video
+<img src = "./demo.gif" alt = "demo">
+
+
 ## Comments
 
 This project is created as a practice to showcase my skills. However this is my first MERN project, I intend to add more features further. Please give it a star and suggest improvements.
