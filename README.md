@@ -77,7 +77,7 @@ JWT_SECRET_KEY=
 NODE_ENV=development
 ```
 ## Demo Video
-<img src = "./demo.gif" alt = "demo">
+<img src = "./demo1.gif" alt = "demo">
 
 
 ## Comments
