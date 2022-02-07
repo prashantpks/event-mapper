@@ -23,6 +23,7 @@ function StarredEvents() {
 
     useEffect(() => {
         if (localStorage.getItem('token')) {
+            document.title = "Eventor | Starred Events";
             getMyEvents();
         } else {
             navigate('/login');

@@ -28,11 +28,12 @@ function MapBody(props) {
 
   const getEvents = async () => {
     const events = await getEventList(startDate, endDate);
-    console.log(events);
+    // console.log(events);
     if (isMounted.current) setData(events);
   }
 
   useEffect(() => {
+    document.title = "Eventor | Home";
     getEvents();
     //eslint-disable-next-line
   }, [startDate, endDate])

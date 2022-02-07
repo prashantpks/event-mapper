@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState, useEffect} from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import {uploadImage ,createUser} from '../api/AuthApi';
 
@@ -32,6 +32,10 @@ function Signup(props) {
     const handleChange = (e)=>{
         setCredentials({...credentials, [e.target.name]:e.target.value});
     }
+
+    useEffect(() => {
+        document.title="Eventor | Signup";
+    }, [])
 
     return (
         <div className="log">

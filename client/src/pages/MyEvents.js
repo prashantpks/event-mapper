@@ -81,6 +81,7 @@ function MyEvents(props) {
 
     useEffect(() => {
         if (localStorage.getItem('token')) {
+            document.title = "Eventor | My Events"
             getMyEvents();
         } else {
             navigate('/login');

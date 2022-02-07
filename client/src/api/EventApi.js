@@ -5,7 +5,7 @@ const authToken = localStorage.getItem('token');
 export async function addEvent(eventData,bannerUrl,startDate,endDate){
     const start_time = startDate;
     const end_time = endDate;
-    console.log(authToken);
+    //console.log(authToken);
     const response = await fetch(`${API_URL}/api/event/addevent`,{
         method:'POST',
         headers: {
@@ -23,7 +23,7 @@ export async function addEvent(eventData,bannerUrl,startDate,endDate){
 export async function updateEvent(id,eventData,startDate,endDate){
     const start_time = startDate;
     const end_time = endDate;
-    console.log(authToken);
+   // console.log(authToken);
     const response = await fetch(`${API_URL}/api/event/updateevent/${id}`,{
         method:'PUT',
         headers: {
@@ -52,7 +52,7 @@ export async function getEventList(startDate, endDate){
     });
 
     const json = await response.json();
-    console.log(json);
+    //console.log(json);
     if(json.success){
         return json.events;
     }
@@ -90,7 +90,7 @@ export async function fetchMyEvents(){
 
     
     const json = await response.json();
-    console.log(json);
+    //console.log(json);
     return json;  
 }
 
