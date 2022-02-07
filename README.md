@@ -19,7 +19,7 @@ This project was created using the following technologies.
 
 **Client**
 
-* React JS
+* Create-react-app (For ReactJS)
 * React-map-gl (For map body and styling)
 * React-map-gl-geocoder (For on map Geocoder)
 * React-datepicker (For selecting range of dates)
